@@ -16,8 +16,8 @@ export const Order = () => {
 
         <div className={style.wrap_list}>
           <ul className={style.list}>
-            {orderList.map((item) => (
-              <li className={style.item}>
+            {orderList.map((item, i) => (
+              <li key={i} className={style.item}>
                 <img className={style.image} src="img/burger_1.jpg" alt={item} />
                 <OrderGoods item={item} />
                 <Count count={3} />

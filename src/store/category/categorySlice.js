@@ -4,7 +4,7 @@ import { API_URL, POSTFIX } from "../../const";
 const initialState = {
   category: [],
   error: "",
-  activeCategory: 5,
+  activeCategory: 0,
 };
 
 export const categoryRequestAsync = createAsyncThunk("category/fetch", (data, obj) => {

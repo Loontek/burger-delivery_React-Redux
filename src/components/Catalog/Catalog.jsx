@@ -26,11 +26,15 @@ export const Catalog = () => {
 
           <div className={style.wrap_list}>
             <ul className={style.list}>
-              {products.map((item) => (
-                <li key={item.id} className={style.item}>
-                  <CatalogProduct item={item} />
-                </li>
-              ))}
+              {products.length > 0 ? (
+                products.map((item) => (
+                  <li key={item.id} className={style.item}>
+                    <CatalogProduct item={item} />
+                  </li>
+                ))
+              ) : (
+                <span className={style.absence_alert}>К сожалению товаров данной категории нет.</span>
+              )}
             </ul>
           </div>
         </div>

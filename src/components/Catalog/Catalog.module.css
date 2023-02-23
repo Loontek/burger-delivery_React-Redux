@@ -20,6 +20,13 @@
   gap: 10px;
 }
 
+.absence_alert {
+  display: block;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 120%;
+}
+
 
 @media (min-width: 1024px) {
   .catalog {

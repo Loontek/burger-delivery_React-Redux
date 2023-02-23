@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import { Container } from "./components/Container/Container";
+import { Catalog } from "./components/Catalog/Catalog";
+import { Footer } from "./components/Footer/Footer";
+// import { Container } from "./components/Container/Container";
 import { Header } from "./components/Header/Header";
+import { Navigation } from "./components/Navigation/Navigation";
 // import './App.css'
 
 export const App = () => {
@@ -11,12 +14,10 @@ export const App = () => {
     <React.Fragment>
       <Header />
       <main>
-        <nav>
-          <Container maks="leskin" className="navigation__container" />
-        </nav>
-        <section></section>
+        <Navigation />
+        <Catalog />
       </main>
-      <footer></footer>
+      <Footer />
     </React.Fragment>
   );
 };

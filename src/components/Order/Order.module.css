@@ -108,6 +108,13 @@
   margin-bottom: 8px;
 }
 
+.submit:disabled {
+  background-color: #bfbfc0;
+  color: #000;
+  opacity: .5;
+  cursor: no-drop;
+}
+
 .apeal {
   display: flex;
   align-items: center;
